@@ -1,102 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MasterDelivery - Registrar</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/registro.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  </head>
-  <body>
-    <nav>
-      <div class="nav_container">
-        <a href="index.html"><h1>MasterDelivery</h1></a>
-        <div class="nav_container__cliente">
-          <a href="login.html"><p>login</p></a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MasterDelivery - Registrar</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/registro.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav_container">
+      <a href="index.html">
+        <h1>MasterDelivery</h1>
+      </a>
+      <div class="nav_container__cliente">
+        <a href="login.html">
+          <p>login</p>
+        </a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section id="register">
-      <div class="register_container">
-        <div class="register_container__txt">
-          <h2>Registrar</h2>
+  <section id="register">
+    <div class="register_container">
+      <div class="register_container__txt">
+        <h2>Registrar</h2>
+      </div>
+
+      <form class="register_container__form">
+        <div class="input-group">
+          <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+          <input type="text" placeholder="nome" required />
         </div>
 
-        <form class="register_container__form">
-          <div class="input-group">
-            <span class="input-icon"><i class="fa-solid fa-user"></i></span>
-            <input type="text" placeholder="nome" required />
-          </div>
-
-          <div class="input-group">
-            <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
-            <input id="password" type="password" placeholder="senha" required />
-            <button
-              type="button"
-              id="togglePasswordBtn"
-              class="toggle-password"
-              onclick="togglePassword()"
-              aria-label="Mostrar senha"
-            >
-              <i id="eyeIcon" class="fa-solid fa-eye-slash"></i>
-            </button>
-          </div>
-
-          <div class="input-group">
-            <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
-            <input
-              id="passwordConfirm"
-              type="password"
-              placeholder="confirme sua senha"
-              required
-            />
-            <button
-              type="button"
-              class="toggle-password"
-              onclick="toggleConfirmPassword()"
-              aria-label="Mostrar senha"
-            >
-              <i id="eyeIconConfirm" class="fa-solid fa-eye-slash"></i>
-            </button>
-          </div>
-
-          <div class="input-group">
-            <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
-            <input type="email" placeholder="insira seu email" required />
-          </div>
-
-          <div class="input-group">
-            <span class="input-icon"><i class="fa-regular fa-calendar-days"></i></span>
-            <input type="date" placeholder="data de nascimento" required />
-          </div>
-
-          <div class="input-group">
-            <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
-            <input type="tel" placeholder="telefone" required />
-          </div>
-
-          <div class="input-group">
-            <span class="input-icon"><i class="fa-solid fa-location-dot"></i></span>
-            <input type="text" placeholder="endereço" required />
-          </div>
-
-          <button type="submit" class="register_container__form--btn">
-            Registrar
+        <div class="input-group">
+          <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+          <input id="password" type="password" placeholder="senha" maxlength="8" required />
+          <button type="button" id="togglePasswordBtn" class="toggle-password" onclick="togglePassword()"
+            aria-label="Mostrar senha">
+            <i id="eyeIcon" class="fa-solid fa-eye-slash"></i>
           </button>
+        </div>
 
-          <div class="divider"><span></span><small>ou</small><span></span></div>
 
-          <div class="register_container__form--social">
-            <img src="../assets/images/google.png" alt="Google login" />
-            <img src="../assets/images/facebook.png" alt="Facebook login" />
-            <img src="../assets/images/twitter.png" alt="X login" />
-          </div>
-        </form>
-      </div>
-    </section>
 
-    <script src="../js/registro.js"></script>
-  </body>
+
+
+        <div class="input-group">
+          <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+          <input id="passwordConfirm" type="password" placeholder="confirme sua senha" maxlength="8" required />
+          <button type="button" class="toggle-password" onclick="toggleConfirmPassword()" aria-label="Mostrar senha">
+            <i id="eyeIconConfirm" class="fa-solid fa-eye-slash"></i>
+          </button>
+        </div>
+
+        <div class="input-group">
+          <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" placeholder="insira seu email" required />
+        </div>
+
+        <div class="input-group">
+          <span class="input-icon"><i class="fa-regular fa-calendar-days"></i></span>
+          <input type="date" placeholder="data de nascimento" required />
+        </div>
+
+        <div class="input-group">
+          <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
+          <input type="tel" placeholder="telefone" maxlength="11" required />
+        </div>
+
+        <div class="input-group">
+          <span class="input-icon"><i class="fa-solid fa-location-dot"></i></span>
+          <input type="text" placeholder="endereço" required />
+        </div>
+
+        <button type="submit" class="register_container__form--btn">
+          Registrar
+        </button>
+
+        <div class="divider"><span></span><small>ou</small><span></span></div>
+
+        <div class="register_container__form--social">
+          <img src="../assets/images/google.png" alt="Google login" />
+          <img src="../assets/images/facebook.png" alt="Facebook login" />
+          <img src="../assets/images/twitter.png" alt="X login" />
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal de Senha Incorreta -->
+  <div id="customAlert" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+">
+    <div id="alertBox" style="
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    transform: scale(0.8);
+    opacity: 0;
+    animation: zoomIn 0.3s ease forwards;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-family: sans-serif;
+  ">
+      <p style="margin-bottom: 20px; color: #333;">As senhas não coincidem!</p>
+      <button onclick="closeCustomAlert()" style="
+      padding: 8px 16px;
+      background-color: #d33;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    ">OK</button>
+    </div>
+  </div>
+
+  <style>
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+
+
+
+  <script src="../js/registro.js"></script>
+</body>
+
 </html>

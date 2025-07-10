@@ -94,12 +94,6 @@ Criar um sistema web que permita:
 
 ---
 
-## 🖼️ Preview
-
-![Tela inicial do sistema](../assets/images/preview.png)
-
----
-
 ## 🛠 Como Executar o Projeto
 
 1. Clone este repositório:
