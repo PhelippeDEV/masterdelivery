@@ -1,0 +1,88 @@
+/* BARRA DE NAVEGAÇÃO */
+
+.nav_container {
+    display: flex;
+    margin: 20px 0 0 0;
+    justify-content: space-between;
+}
+
+.nav_container h1 {
+    font-size: 36px;
+}
+
+.nav_container__cliente {
+    display: flex;
+    gap: 25px;
+}
+
+.nav_container__cliente a{
+    font-size: 20px;
+    margin: auto;
+    
+}
+
+.nav_container__cliente button{
+    background-color: var(--verde-claro);
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+/* BANNER */
+
+.banner_container {
+    display: flex;
+}
+
+.banner_container__txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+.banner_container__txt h2 {
+    font-size: 48px;
+}
+
+.banner_container__txt span {
+    font-size: 32px;
+    color: var(--verde-claro);
+}
+
+.banner_container__txt--social {
+    display: flex;
+    gap: 40px;
+}
+
+.banner_container__txt--social span {
+    color: black;
+    font-size: 16px;
+    margin: auto;
+}
+
+.banner_container__txt--social img {
+    width: 32px;
+}
+
+.banner_container__txt--social-google, .banner_container__txt--social-apple {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px 15px;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.banner_container__img {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.banner_container__img img{
+    width: 90%;
+
+}
