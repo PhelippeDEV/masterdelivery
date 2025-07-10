@@ -1,0 +1,107 @@
+/* FORMULÁRIO DE REGISTRO */
+
+#register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.register_container {
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+.register_container__txt h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.register_container__form .input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 1rem;
+}
+.register_container__form input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #fafafa;
+  transition: border-color 0.2s;
+}
+.register_container__form input:focus {
+  outline: none;
+  border-color: #0a84ff;
+}
+
+.register_container__form .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.register_container__form .toggle-password:focus {
+  outline: none;
+}
+
+.register_container__form--btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2ecc71;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.register_container__form--btn:hover {
+  background: #27ae60;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+.divider small {
+  margin: 0 0.5rem;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.register_container__form--social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.register_container__form--social img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.register_container__form--social img:hover {
+  transform: scale(1.1);
+}

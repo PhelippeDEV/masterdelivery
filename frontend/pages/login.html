@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterDelivery - Login</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav_container">
+        <a href="index.html"><h1>MasterDelivery</h1></a>
+        <div class="nav_container__cliente">
+          <a href="registro.html"><p>registrar-se</p></a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="login">
+      <div class="login_container">
+        <div class="login_container__txt">
+          <h2>Login</h2>
+        </div>
+
+        <form class="login_container__form">
+          <div class="login_container__form--input">
+            <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" placeholder="insira seu email" required />
+          </div>
+
+          <div class="login_container__form--input">
+            <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+            <input id="password" type="password" placeholder="senha" required />
+            <button   type="button" id="togglePasswordBtn" class="toggle-password" onclick="togglePassword()" aria-label="Mostrar senha">
+              <i id="eyeIcon" class="fa-solid fa-eye-slash"></i>
+            </button>
+          </div>
+
+          <div class="login_container__form--options">
+            <label><input type="checkbox" />Lembrar-me</label>
+            <span class="forgot-password">Esqueceu a senha?</span>
+          </div>
+
+          <button type="submit" class="login_container__form--btn">
+            Login
+          </button>
+
+          <div class="divider"><span></span><small>ou</small><span></span></div>
+
+          <div class="login_container__form--social">
+            <img src="../assets/images/google.png" alt="Google login" />
+            <img src="../assets/images/facebook.png" alt="Facebook login" />
+            <img src="../assets/images/twitter.png" alt="Twitter login" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>

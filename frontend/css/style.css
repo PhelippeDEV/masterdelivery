@@ -12,10 +12,47 @@
     font: inherit;
     text-decoration: none;
     font-family: var(--texto-principal);
+    background-color: var(--neutro-claro);
 }
 
 body {
     margin: 0 5% 0 5%;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+/* BARRA DE NAVEGAÇÃO */
+
+.nav_container {
+    display: flex;
+    margin: 20px 0 0 0;
+    justify-content: space-between;
+}
+
+.nav_container h1 {
+    font-size: 36px;
+}
+
+.nav_container__cliente {
+    display: flex;
+    gap: 25px;
+}
+
+.nav_container__cliente a{
+    font-size: 20px;
+    margin: auto;
+    
+}
+
+.nav_container__cliente--login-btn {
+    background-color: var(--verde-claro);
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
 }
 
 /* Declaração das variáveis de cores */
