@@ -31,7 +31,7 @@ Criar um sistema web que permita:
 
 ## 🖼️ Preview
 
-![Tela inicial do sistema](./assets/images/preview.png)
+![Tela inicial do sistema](../assets/images/preview.png)
 
 ---
 
